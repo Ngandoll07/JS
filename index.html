@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Form giỏ hàng </title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <script src = "./main.js"> </script>
+</head>
+<body> 
+    <div class="cart-item">
+        <div class="left-side">
+            <img src="./assets/img/laptop.webp" alt="Sản phẩm 1" class="product-image">
+            <div>
+                <h3>Tên sản phẩm 1</h3>
+                <p>Giá: $50</p>
+                <p>Số lượng: <span id="quantity1">1</span></p>
+            </div>
+        </div>
+        <div class="right-side">
+            <label for="discountCode">Mã giảm giá:</label>
+            <input type="text" id="discountCode1">
+            <button onclick="applyDiscount(1)">Áp dụng</button>
+        </div>
+    </div>
+
+    <div class="cart-item">
+        <div class="left-side">
+            <img src="./assets/img/laptop2.webp" alt="Sản phẩm 2" class="product-image">
+            <div>
+                <h3>Tên sản phẩm 2</h3>
+                <p>Giá: $40</p>
+                <p>Số lượng: <span id="quantity2">1</span></p>
+            </div>
+        </div>
+        <div class="right-side">
+            <label for="discountCode">Mã giảm giá:</label>
+            <input type="text" id="discountCode2">
+            <button onclick="applyDiscount(2)">Áp dụng</button>
+        </div>
+    </div>
+</body>
+</html>
